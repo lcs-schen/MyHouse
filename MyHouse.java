@@ -3,7 +3,7 @@
  * It draws a complete house on screen using individual shapes.
  *
  * @Author Sam Chen
- * @version 11th, jan, 2019
+ * @version 11th, jan, 2019 
  */
 public class MyHouse
 {
