@@ -25,7 +25,9 @@ public class MyHouse
     private Triangle grass8;
     private Triangle grass9;
     private Triangle grass10;
-    private Tree tree1;
+    private Tree tree;
+    private Door door;
+    
     
 
     /**
@@ -49,26 +51,35 @@ public class MyHouse
         grass8 = new Triangle();
         grass9 = new Triangle();
         grass10 = new Triangle();
-        tree1 = new Tree(0, 0);
+        
+        // Now actually use the shapes to draw the house
+        drawHouse();
+        
+        // Now draw trees
+        tree = new Tree(210, 170);
+        
+        //Draw door
+        door = new Door(100, 155);
     }
 
     /**
      * Draw the house for us.
      */
-    public void drawhouse()
+    public void drawHouse()
     {
         // Put the roof
        roof.changeSize(50, 200);
        roof.moveHorizontal(100);
        roof.moveVertical(40);
        roof.makeVisible();
-       roof.changeColor("blue");
+       roof.changeColor("green");
        
        //Put the base
        base.changeSize(130);
        base.moveVertical(55);
        base.moveHorizontal(25);
        base.makeVisible();
+       base.changeColor("yellow");
        
        //Put the window
        window.changeSize(40);
@@ -86,7 +97,7 @@ public class MyHouse
        
        //Put the chimney
        chimney.changeSize(40);
-       chimney.changeColor("blue");
+       chimney.changeColor("green");
        chimney.moveHorizontal(110);
        chimney.moveVertical(5);
        chimney.makeVisible();
