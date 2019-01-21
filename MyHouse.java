@@ -62,8 +62,8 @@ public class MyHouse
         // Now draw trees
         tree = new Tree(210, 170);
         tree1 = new Tree(260, 170);
-        tree2 = new Tree(310, 170);
-        tree3 = new Tree(360, 170);
+        tree2 = new Tree(310, 190);
+        tree3 = new Tree(360, 200);
         tree4 = new Tree(2, 170);
         
         
