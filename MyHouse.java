@@ -26,6 +26,10 @@ public class MyHouse
     private Triangle grass9;
     private Triangle grass10;
     private Tree tree;
+    private Tree tree1;
+    private Tree tree2;
+    private Tree tree3;
+    private Tree tree4;
     private Door door;
     
     
@@ -57,6 +61,12 @@ public class MyHouse
         
         // Now draw trees
         tree = new Tree(210, 170);
+        tree1 = new Tree(260, 170);
+        tree2 = new Tree(310, 170);
+        tree3 = new Tree(360, 170);
+        tree4 = new Tree(2, 170);
+        
+        
         
         //Draw door
         door = new Door(100, 155);
